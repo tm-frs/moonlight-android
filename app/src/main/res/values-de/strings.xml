@@ -186,6 +186,8 @@
     <string name="summary_checkbox_host_audio">Audio auf dem Host und auf diesem Gerät wiedergeben</string>
     <string name="category_advanced_settings">Erweiterte Einstellungen</string>
     <string name="title_disable_frame_drop">Nie Frames Überspringen</string>
+    <string name="title_unlock_resolution">Alle möglichen Bildauflösungen freischalten</string>
+    <string name="summary_unlock_resolution">Streaming mit einer höheren Auflösung als mit der vom Bildschirm erhöht nur die Netzwerkauslastung und die Latenz</string>
     <string name="title_unlock_fps">Alle möglichen Framerates freischalten</string>
     <string name="summary_unlock_fps">Streaming mit 90 oder 120 FPS kann die Latenz auf High-End-Geräten verringern, kann aber bei Geräten, die dies nicht unterstützen, zu stottern oder Instabilität führen</string>
     <string name="title_checkbox_disable_warnings">Warnhinweise deaktivieren</string>

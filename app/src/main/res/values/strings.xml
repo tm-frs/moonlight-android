@@ -236,6 +236,8 @@
     <string name="summary_checkbox_host_audio">Play audio from the computer and this device</string>
 
     <string name="category_advanced_settings">Advanced Settings</string>
+    <string name="title_unlock_resolution">Unlock all possible resolutions</string>
+    <string name="summary_unlock_resolution">Streaming a resolution that\'s higher than your screen\'s actual resolution only increases network usage and latency</string>
     <string name="title_unlock_fps">Unlock all possible frame rates</string>
     <string name="summary_unlock_fps">Streaming at 90 or 120 FPS may reduce latency on high-end devices but can cause lag or instability on devices that can\'t support it</string>
     <string name="title_checkbox_reduce_refresh_rate">Allow refresh rate reduction</string>

@@ -227,6 +227,11 @@
     <PreferenceCategory android:title="@string/category_advanced_settings"
         android:key="category_advanced_settings">
         <CheckBoxPreference
+                android:key="checkbox_unlock_resolution"
+                android:title="@string/title_unlock_resolution"
+                android:summary="@string/summary_unlock_resolution"
+                android:defaultValue="false" />
+        <CheckBoxPreference
             android:key="checkbox_unlock_fps"
             android:title="@string/title_unlock_fps"
             android:summary="@string/summary_unlock_fps"

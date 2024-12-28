@@ -474,7 +474,7 @@ public class StreamSettings extends Activity {
 
                 LimeLog.info("Maximum resolution slot: "+maxSupportedResW);
 
-                if (maxSupportedResW != 0) {
+                if (maxSupportedResW != 0 && !PreferenceConfiguration.readPreferences(this.getActivity()).unlockResolution) {
                     if (maxSupportedResW < 3840) {
                         // 4K is unsupported
                         removeValue(PreferenceConfiguration.RESOLUTION_PREF_STRING, PreferenceConfiguration.RES_4K, new Runnable() {
@@ -571,6 +571,8 @@ public class StreamSettings extends Activity {
                     return true;
                 }
             });
+            // just use the same thing for unlock resolution option (a setting that basically is the same thing)
+            findPreference(PreferenceConfiguration.UNLOCK_RESOLUTION_STRING).setOnPreferenceChangeListener(findPreference(PreferenceConfiguration.UNLOCK_FPS_STRING).getOnPreferenceChangeListener());
 
             // Remove HDR preference for devices below Nougat
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
